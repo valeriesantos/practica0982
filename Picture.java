@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+  
     private Circle floor;
 
     /**
@@ -22,7 +23,7 @@ public class Picture
      */
     public Picture()
     {
-        // nothing to do... instance variables are automatically set to null
+      
     }
 
     /**
@@ -55,6 +56,7 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        
         
         
         floor = new Circle();   
@@ -94,5 +96,12 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+    /**
+     * Poner metodo moveSun
+     */
+    public void moveSun()
+    {
+        sun.slowMoveVertical(100);
     }
 }
