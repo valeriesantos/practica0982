@@ -17,6 +17,7 @@ public class Picture
     private Circle sun;
   
     private Circle floor;
+    private Person person1;
 
     /**
      * Constructor for objects of class Picture
@@ -66,6 +67,11 @@ public class Picture
         floor.changeSize(800);
         floor.makeVisible();
         
+        person1 = new Person();
+        person1.moveHorizontal(-100);
+        person1.slowMoveHorizontal(150);
+        
+        
         
         
       
@@ -114,4 +120,21 @@ public class Picture
         
         
     }
+      /**
+     * Poner metodo movePerson()
+     */
+    public void movePerson()
+    {
+        person1 = new Person();
+        person1.moveHorizontal(-250);
+        person1.makeVisible();
+        person1.slowMoveHorizontal(70);
+        
+     
+
+        
+        
+    }
 }
+
+   
