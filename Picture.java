@@ -66,6 +66,8 @@ public class Picture
         floor.changeSize(800);
         floor.makeVisible();
         
+        
+        
       
    
     }
@@ -95,6 +97,7 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+            
         }
     }
     /**
@@ -103,5 +106,12 @@ public class Picture
     public void moveSun()
     {
         sun.slowMoveVertical(100);
+        roof.changeColor("black");
+        sun.changeColor("black");
+        wall.changeColor("black");
+        window.changeColor("white");
+        floor.changeColor("black");
+        
+        
     }
 }
